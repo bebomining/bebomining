@@ -1,0 +1,8 @@
+{
+    "gpu": [
+        {
+            "value": "ethash",
+            "label": "ETHASH"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "gpu": [
+        {
+            "value": "ethash",
+            "label": "ETHASH - (Suggested)"
+        },
+        {
+            "value": "etchash",
+            "label": "ETCHASH"
+        },
+        {
+            "value": "kawpow",
+            "label": "KAWPOW"
+        }
+    ],
+    "cpu": [
+        {
+            "value": "rx",
+            "label": "RX"
+        }
+    ]
+}

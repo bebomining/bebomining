@@ -1,0 +1,10 @@
+[
+    {
+        "symbol": "ETH+ZIL",
+        "network": "ETH,ZIL"
+    },
+    {
+        "symbol": "ETC+ZIL",
+        "network": "ETC,ZIL"
+    }
+]

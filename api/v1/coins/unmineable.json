@@ -1,0 +1,542 @@
+[
+    {
+        "symbol": "1INCH",
+        "network": "ETH",
+        "name": "1inch",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 1
+    },
+    {
+        "symbol": "CHZ",
+        "network": "ETH",
+        "name": "Chiliz",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 1
+    },
+    {
+        "symbol": "HOT",
+        "network": "ETH",
+        "name": "Holo",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 1
+    },
+    {
+        "symbol": "MATIC",
+        "network": "ETH",
+        "name": "MATIC (Polygon)",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 1
+    },
+    {
+        "symbol": "SHIB",
+        "network": "ETH",
+        "name": "SHIBA INU",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 1
+    },
+    {
+        "symbol": "SOL",
+        "network": "SOL",
+        "name": "Solana",
+        "mining_fee": "1",
+        "regex": "^[0-9a-zA-Z]{32,44}$",
+        "regex_memo": null,
+        "top": 1
+    },
+    {
+        "symbol": "AAVE",
+        "network": "ETH",
+        "name": "Aave",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ADA",
+        "network": "ADA",
+        "name": "Cardano",
+        "mining_fee": "1",
+        "regex": "^(([0-9A-Za-z]{57,59})|([0-9A-Za-z]{100,104}))$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ALGO",
+        "network": "ALGO",
+        "name": "Algorand",
+        "mining_fee": "1",
+        "regex": "^[A-Z0-9]{58,58}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ATOM",
+        "network": "ATOM",
+        "name": "Cosmos",
+        "mining_fee": "1",
+        "regex": "^(cosmos1)[0-9a-z]{38}$",
+        "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
+        "top": 0
+    },
+    {
+        "symbol": "BAND",
+        "network": "BAND",
+        "name": "Band Protocol",
+        "mining_fee": "1",
+        "regex": "^(band1)[0-9a-z]{38}$",
+        "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
+        "top": 0
+    },
+    {
+        "symbol": "BAT",
+        "network": "ETH",
+        "name": "Basic Attention Token",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "BCH",
+        "network": "BCH",
+        "name": "Bitcoin Cash",
+        "mining_fee": "1",
+        "regex": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$|^[0-9A-Za-z]{42,42}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "BNB",
+        "network": "BNB",
+        "name": "Binance Coin",
+        "mining_fee": "1",
+        "regex": "^(bnb1)[0-9a-z]{38}$",
+        "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
+        "top": 0
+    },
+    {
+        "symbol": "BTC",
+        "network": "BTC",
+        "name": "Bitcoin",
+        "mining_fee": "1",
+        "regex": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$|^(bc1)[0-9A-Za-z]{39,59}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "BTG",
+        "network": "BTG",
+        "name": "Bitcoin Gold",
+        "mining_fee": "1",
+        "regex": "^[AG][a-km-zA-HJ-NP-Z1-9]{25,34}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "BTT",
+        "network": "TRX",
+        "name": "BitTorrent",
+        "mining_fee": "1",
+        "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "DASH",
+        "network": "DASH",
+        "name": "Dash",
+        "mining_fee": "1",
+        "regex": "^[X|7][0-9A-Za-z]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "DGB",
+        "network": "DGB",
+        "name": "DigiByte",
+        "mining_fee": "1",
+        "regex": "^[DS][a-km-zA-HJ-NP-Z1-9]{25,34}$|^(dgb1)[0-9A-Za-z]{39,59}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "DOGE",
+        "network": "DOGE",
+        "name": "Dogecoin",
+        "mining_fee": "1",
+        "regex": "^(D|A|9)[a-km-zA-HJ-NP-Z1-9]{33,34}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ENJ",
+        "network": "ETH",
+        "name": "Enjin Coin",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "EOS",
+        "network": "EOS",
+        "name": "EOS",
+        "mining_fee": "1",
+        "regex": "^[1-5a-z\\.]{1,12}$",
+        "regex_memo": "^[0-9A-Za-z\\\\-_,]{1,120}$",
+        "top": 0
+    },
+    {
+        "symbol": "ETC",
+        "network": "ETC",
+        "name": "Ethereum Classic",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ETH",
+        "network": "ETH",
+        "name": "Ethereum",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "FUN",
+        "network": "ETH",
+        "name": "FunFair",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "GAS",
+        "network": "NEO",
+        "name": "GAS",
+        "mining_fee": "1",
+        "regex": "^(A)[A-Za-z0-9]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ICX",
+        "network": "ICX",
+        "name": "ICON",
+        "mining_fee": "1",
+        "regex": "^(hx)[A-Za-z0-9]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "KLV",
+        "network": "TRX",
+        "name": "Klever",
+        "mining_fee": "1",
+        "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "KNC",
+        "network": "ETH",
+        "name": "KyberNetwork",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "LINK",
+        "network": "ETH",
+        "name": "ChainLink",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "LSK",
+        "network": "LSK",
+        "name": "Lisk",
+        "mining_fee": "1",
+        "regex": "^[0-9]{12,22}[L]$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "LTC",
+        "network": "LTC",
+        "name": "Litecoin",
+        "mining_fee": "1",
+        "regex": "^(L|M|3)[A-Za-z0-9]{33}$|^(ltc1)[0-9A-Za-z]{39}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "MANA",
+        "network": "ETH",
+        "name": "Decentraland",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "MTL",
+        "network": "ETH",
+        "name": "Metal",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "NANO",
+        "network": "NANO",
+        "name": "NANO",
+        "mining_fee": "1",
+        "regex": "^(xrb_|nano_)[13456789abcdefghijkmnopqrstuwxyz]{60}",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "NEO",
+        "network": "NEO",
+        "name": "NEO",
+        "mining_fee": "1",
+        "regex": "^(A)[A-Za-z0-9]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "QTUM",
+        "network": "QTUM",
+        "name": "Qtum",
+        "mining_fee": "1",
+        "regex": "^[Q|M][A-Za-z0-9]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "REP",
+        "network": "ETH",
+        "name": "Augur",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "RSR",
+        "network": "ETH",
+        "name": "Reserve Rights",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "RVN",
+        "network": "RVN",
+        "name": "Ravencoin",
+        "mining_fee": "1",
+        "regex": "^[Rr]{1}[A-Za-z0-9]{33,34}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "SC",
+        "network": "SC",
+        "name": "Siacoin",
+        "mining_fee": "1",
+        "regex": "^[A-Za-z0-9]{76}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "SKY",
+        "network": "SKY",
+        "name": "Skycoin",
+        "mining_fee": "1",
+        "regex": "^[0-9A-Za-z]{26,35}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "SUSHI",
+        "network": "ETH",
+        "name": "Sushi",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "TRX",
+        "network": "TRX",
+        "name": "TRON",
+        "mining_fee": "1",
+        "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "UNI",
+        "network": "ETH",
+        "name": "Uniswap",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "USDT",
+        "network": "TRX",
+        "name": "TetherUS",
+        "mining_fee": "1",
+        "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "VET",
+        "network": "VET",
+        "name": "VeChain",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "VIA",
+        "network": "VIA",
+        "name": "Viacoin",
+        "mining_fee": "1",
+        "regex": "((V|E)[A-Za-z0-9]{33})|(via1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{39})",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "WAVES",
+        "network": "WAVES",
+        "name": "Waves",
+        "mining_fee": "1",
+        "regex": "^(3P)[0-9A-Za-z]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "WBTC",
+        "network": "ETH",
+        "name": "Wrapped Bitcoin",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "WIN",
+        "network": "TRX",
+        "name": "WINk",
+        "mining_fee": "1",
+        "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "XLM",
+        "network": "XLM",
+        "name": "Stellar Lumens",
+        "mining_fee": "1",
+        "regex": "^G[A-D]{1}[A-Z2-7]{54}$",
+        "regex_memo": "^[0-9A-Za-z]{1,28}$",
+        "top": 0
+    },
+    {
+        "symbol": "XMR",
+        "network": "XMR",
+        "name": "Monero",
+        "mining_fee": "1",
+        "regex": "^[48][a-zA-Z|\\d]{94}([a-zA-Z|\\d]{11})?$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "XRP",
+        "network": "XRP",
+        "name": "Ripple",
+        "mining_fee": "1",
+        "regex": "^r[1-9A-HJ-NP-Za-km-z]{25,34}$",
+        "regex_memo": "^((?!0)[0-9]{1,19})$",
+        "top": 0
+    },
+    {
+        "symbol": "XTZ",
+        "network": "XTZ",
+        "name": "Tezos",
+        "mining_fee": "1",
+        "regex": "^(tz[1,2,3]|KT1)[a-zA-Z0-9]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "XVG",
+        "network": "XVG",
+        "name": "Verge",
+        "mining_fee": "1",
+        "regex": "^(D)[A-Za-z0-9]{33}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "YFI",
+        "network": "ETH",
+        "name": "Yearn.finance",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ZEC",
+        "network": "ZEC",
+        "name": "Zcash",
+        "mining_fee": "1",
+        "regex": "^(t)[A-Za-z0-9]{34}$",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ZIL",
+        "network": "ZIL",
+        "name": "Zilliqa",
+        "mining_fee": "1",
+        "regex": "zil1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{38}",
+        "regex_memo": null,
+        "top": 0
+    },
+    {
+        "symbol": "ZRX",
+        "network": "ETH",
+        "name": "0x",
+        "mining_fee": "1",
+        "regex": "^(0x)[0-9A-Fa-f]{40}$",
+        "regex_memo": null,
+        "top": 0
+    }
+]

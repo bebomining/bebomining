@@ -1,0 +1,35 @@
+{
+    "meta": {
+        "multiRegion": false,
+        "ports": [
+            "5555"
+        ]
+    },
+    "servers": [
+        {
+            "location": "Germany",
+            "server": "eu.ezil.me",
+            "algo": "ethash"
+        },
+        {
+            "location": "US East",
+            "server": "us-east.ezil.me",
+            "algo": "ethash"
+        },
+        {
+            "location": "US West",
+            "server": "us-west.ezil.me",
+            "algo": "ethash"
+        },
+        {
+            "location": "China (Shanghai)",
+            "server": "cn.ezil.me",
+            "algo": "ethash"
+        },
+        {
+            "location": "Asia",
+            "server": "asia.ezil.me",
+            "algo": "ethash"
+        }
+    ]
+}

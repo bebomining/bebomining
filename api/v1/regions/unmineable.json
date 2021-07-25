@@ -1,0 +1,96 @@
+{
+    "meta": {
+        "multiRegion": false,
+        "ports": [
+            "3333",
+            "13333"
+        ]
+    },
+    "servers": [
+        {
+            "location": "Global",
+            "server": "ethash.unmineable.com",
+            "algo": "ethash"
+        },
+        {
+            "location": "Canada",
+            "server": "ethash-ca.unmineable.com",
+            "algo": "ethash"
+        },
+        {
+            "location": "US East",
+            "server": "ethash-us.unmineable.com",
+            "algo": "ethash"
+        },
+        {
+            "location": "Europe",
+            "server": "ethash-eu.unmineable.com",
+            "algo": "ethash"
+        },
+        {
+            "location": "Asia",
+            "server": "ethash-asia.unmineable.com",
+            "algo": "ethash"
+        },
+        {
+            "location": "Global",
+            "server": "etchash.unmineable.com",
+            "algo": "etchash"
+        },
+        {
+            "location": "US East",
+            "server": "etchash-us.unmineable.com",
+            "algo": "etchash"
+        },
+        {
+            "location": "Europe",
+            "server": "etchash-eu.unmineable.com",
+            "algo": "etchash"
+        },
+        {
+            "location": "Asia",
+            "server": "etchash-asia.unmineable.com",
+            "algo": "etchash"
+        },
+        {
+            "location": "Global",
+            "server": "kp.unmineable.com",
+            "algo": "kawpow"
+        },
+        {
+            "location": "US East",
+            "server": "kp-us.unmineable.com",
+            "algo": "kawpow"
+        },
+        {
+            "location": "Europe",
+            "server": "kp-eu.unmineable.com",
+            "algo": "kawpow"
+        },
+        {
+            "location": "Asia",
+            "server": "kp-asia.unmineable.com",
+            "algo": "kawpow"
+        },
+        {
+            "location": "Global",
+            "server": "rx.unmineable.com",
+            "algo": "rx"
+        },
+        {
+            "location": "US East",
+            "server": "rx-us.unmineable.com",
+            "algo": "rx"
+        },
+        {
+            "location": "Europe",
+            "server": "rx-eu.unmineable.com",
+            "algo": "rx"
+        },
+        {
+            "location": "Asia",
+            "server": "rx-asia.unmineable.com",
+            "algo": "rx"
+        }
+    ]
+}
