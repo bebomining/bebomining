@@ -2,7 +2,7 @@
     "gpu": [
         {
             "value": "ethash",
-            "label": "ETHASH - (Suggested)"
+            "label": "ETHASH"
         },
         {
             "value": "etchash",
