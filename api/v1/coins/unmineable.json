@@ -7,7 +7,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 1,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "CHZ",
@@ -17,7 +17,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 1,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "HOT",
@@ -27,7 +27,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 1,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "MATIC",
@@ -37,7 +37,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 1,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "SHIB",
@@ -47,7 +47,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 1,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "SOL",
@@ -57,7 +57,7 @@
         "regex": "^[0-9a-zA-Z]{32,44}$",
         "regex_memo": null,
         "top": 1,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "AAVE",
@@ -67,7 +67,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ADA",
@@ -77,7 +77,7 @@
         "regex": "^(([0-9A-Za-z]{57,59})|([0-9A-Za-z]{100,104}))$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ALGO",
@@ -87,7 +87,7 @@
         "regex": "^[A-Z0-9]{58,58}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ATOM",
@@ -97,7 +97,7 @@
         "regex": "^(cosmos1)[0-9a-z]{38}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "BAND",
@@ -107,7 +107,7 @@
         "regex": "^(band1)[0-9a-z]{38}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "BAT",
@@ -117,7 +117,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "BCH",
@@ -127,7 +127,7 @@
         "regex": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$|^[0-9A-Za-z]{42,42}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "BNB",
@@ -137,7 +137,7 @@
         "regex": "^(bnb1)[0-9a-z]{38}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "BTC",
@@ -147,7 +147,7 @@
         "regex": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$|^(bc1)[0-9A-Za-z]{39,59}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "BTG",
@@ -157,7 +157,7 @@
         "regex": "^[AG][a-km-zA-HJ-NP-Z1-9]{25,34}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "BTT",
@@ -167,7 +167,7 @@
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "DASH",
@@ -177,7 +177,7 @@
         "regex": "^[X|7][0-9A-Za-z]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "DGB",
@@ -187,7 +187,7 @@
         "regex": "^[DS][a-km-zA-HJ-NP-Z1-9]{25,34}$|^(dgb1)[0-9A-Za-z]{39,59}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "DOGE",
@@ -197,7 +197,7 @@
         "regex": "^(D|A|9)[a-km-zA-HJ-NP-Z1-9]{33,34}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ENJ",
@@ -207,7 +207,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "EOS",
@@ -217,7 +217,7 @@
         "regex": "^[1-5a-z\\.]{1,12}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_,]{1,120}$",
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ETC",
@@ -227,7 +227,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ETH",
@@ -237,7 +237,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "FUN",
@@ -247,7 +247,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "GAS",
@@ -257,7 +257,7 @@
         "regex": "^(A)[A-Za-z0-9]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ICX",
@@ -267,7 +267,7 @@
         "regex": "^(hx)[A-Za-z0-9]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "KLV",
@@ -277,7 +277,7 @@
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "KNC",
@@ -287,7 +287,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "LINK",
@@ -297,7 +297,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "LSK",
@@ -307,7 +307,7 @@
         "regex": "^[0-9]{12,22}[L]$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "LTC",
@@ -317,7 +317,7 @@
         "regex": "^(L|M|3)[A-Za-z0-9]{33}$|^(ltc1)[0-9A-Za-z]{39}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "MANA",
@@ -327,7 +327,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "MTL",
@@ -337,7 +337,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "NANO",
@@ -347,7 +347,7 @@
         "regex": "^(xrb_|nano_)[13456789abcdefghijkmnopqrstuwxyz]{60}",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "NEO",
@@ -357,7 +357,7 @@
         "regex": "^(A)[A-Za-z0-9]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "QTUM",
@@ -367,7 +367,7 @@
         "regex": "^[Q|M][A-Za-z0-9]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "REP",
@@ -377,7 +377,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "RSR",
@@ -387,7 +387,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "RVN",
@@ -397,7 +397,7 @@
         "regex": "^[Rr]{1}[A-Za-z0-9]{33,34}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "SC",
@@ -407,7 +407,7 @@
         "regex": "^[A-Za-z0-9]{76}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "SKY",
@@ -417,7 +417,7 @@
         "regex": "^[0-9A-Za-z]{26,35}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "SUSHI",
@@ -427,7 +427,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "TRX",
@@ -437,7 +437,7 @@
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "UNI",
@@ -447,7 +447,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "USDT",
@@ -457,7 +457,7 @@
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "VET",
@@ -467,7 +467,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "VIA",
@@ -477,7 +477,7 @@
         "regex": "((V|E)[A-Za-z0-9]{33})|(via1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{39})",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "WAVES",
@@ -487,7 +487,7 @@
         "regex": "^(3P)[0-9A-Za-z]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "WBTC",
@@ -497,7 +497,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "WIN",
@@ -507,7 +507,7 @@
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "XLM",
@@ -517,7 +517,7 @@
         "regex": "^G[A-D]{1}[A-Z2-7]{54}$",
         "regex_memo": "^[0-9A-Za-z]{1,28}$",
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "XMR",
@@ -527,7 +527,7 @@
         "regex": "^[48][a-zA-Z|\\d]{94}([a-zA-Z|\\d]{11})?$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "XRP",
@@ -537,7 +537,7 @@
         "regex": "^r[1-9A-HJ-NP-Za-km-z]{25,34}$",
         "regex_memo": "^((?!0)[0-9]{1,19})$",
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "XTZ",
@@ -547,7 +547,7 @@
         "regex": "^(tz[1,2,3]|KT1)[a-zA-Z0-9]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "XVG",
@@ -557,7 +557,7 @@
         "regex": "^(D)[A-Za-z0-9]{33}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "YFI",
@@ -567,7 +567,7 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ZEC",
@@ -577,7 +577,7 @@
         "regex": "^(t)[A-Za-z0-9]{34}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ZIL",
@@ -587,7 +587,7 @@
         "regex": "zil1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{38}",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     },
     {
         "symbol": "ZRX",
@@ -597,6 +597,6 @@
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
         "top": 0,
-        "algos": ["ethash", "etchash", "kawpow"]
+        "algos": ["ethash", "etchash", "kawpow", "rx"]
     }
 ]
