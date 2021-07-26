@@ -1,0 +1,69 @@
+{
+    "meta": {
+        "multiRegion": false,
+        "ports": [
+            "5555"
+        ]
+    },
+    "servers": [
+        {
+            "location": "Asia",
+            "server": "asia1.ethermine.org",
+            "algo": "ethash"
+        },
+        {
+            "location": "Europe",
+            "server": "eu1.ethermine.org",
+            "algo": "ethash"
+        },
+        {
+            "location": "US East",
+            "server": "us1.ethermine.org",
+            "algo": "ethash"
+        },
+        {
+            "location": "US West",
+            "server": "us2.ethermine.org",
+            "algo": "ethash"
+        },
+        {
+            "location": "Asia",
+            "server": "asia1-etc.ethermine.org",
+            "algo": "etchash"
+        },
+        {
+            "location": "Europe",
+            "server": "eu1-etc.ethermine.org",
+            "algo": "etchash"
+        },
+        {
+            "location": "US",
+            "server": "us1-etc.ethermine.org",
+            "algo": "etchash"
+        },
+
+        {
+            "location": "Asia",
+            "server": "asia1-etc.ethermine.org",
+            "algo": "etchash"
+        },
+        {
+            "location": "Europe",
+            "server": "eu1-etc.ethermine.org",
+            "algo": "etchash"
+        },
+        {
+            "location": "US",
+            "server": "us1-etc.ethermine.org",
+            "algo": "etchash"
+        },
+        {
+            "location": "Global",
+            "server": "stratum-ravencoin.flypool.org",
+            "algo": "kawpow",
+            "ports": [
+                "3443"
+            ]
+        }
+    ]
+}

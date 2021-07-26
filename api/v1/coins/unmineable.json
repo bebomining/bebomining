@@ -6,7 +6,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 1
+        "top": 1,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "CHZ",
@@ -15,7 +16,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 1
+        "top": 1,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "HOT",
@@ -24,7 +26,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 1
+        "top": 1,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "MATIC",
@@ -33,7 +36,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 1
+        "top": 1,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "SHIB",
@@ -42,7 +46,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 1
+        "top": 1,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "SOL",
@@ -51,7 +56,8 @@
         "mining_fee": "1",
         "regex": "^[0-9a-zA-Z]{32,44}$",
         "regex_memo": null,
-        "top": 1
+        "top": 1,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "AAVE",
@@ -60,7 +66,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ADA",
@@ -69,7 +76,8 @@
         "mining_fee": "1",
         "regex": "^(([0-9A-Za-z]{57,59})|([0-9A-Za-z]{100,104}))$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ALGO",
@@ -78,7 +86,8 @@
         "mining_fee": "1",
         "regex": "^[A-Z0-9]{58,58}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ATOM",
@@ -87,7 +96,8 @@
         "mining_fee": "1",
         "regex": "^(cosmos1)[0-9a-z]{38}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "BAND",
@@ -96,7 +106,8 @@
         "mining_fee": "1",
         "regex": "^(band1)[0-9a-z]{38}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "BAT",
@@ -105,7 +116,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "BCH",
@@ -114,7 +126,8 @@
         "mining_fee": "1",
         "regex": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$|^[0-9A-Za-z]{42,42}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "BNB",
@@ -123,7 +136,8 @@
         "mining_fee": "1",
         "regex": "^(bnb1)[0-9a-z]{38}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_]{1,120}$",
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "BTC",
@@ -132,7 +146,8 @@
         "mining_fee": "1",
         "regex": "^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$|^(bc1)[0-9A-Za-z]{39,59}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "BTG",
@@ -141,7 +156,8 @@
         "mining_fee": "1",
         "regex": "^[AG][a-km-zA-HJ-NP-Z1-9]{25,34}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "BTT",
@@ -150,7 +166,8 @@
         "mining_fee": "1",
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "DASH",
@@ -159,7 +176,8 @@
         "mining_fee": "1",
         "regex": "^[X|7][0-9A-Za-z]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "DGB",
@@ -168,7 +186,8 @@
         "mining_fee": "1",
         "regex": "^[DS][a-km-zA-HJ-NP-Z1-9]{25,34}$|^(dgb1)[0-9A-Za-z]{39,59}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "DOGE",
@@ -177,7 +196,8 @@
         "mining_fee": "1",
         "regex": "^(D|A|9)[a-km-zA-HJ-NP-Z1-9]{33,34}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ENJ",
@@ -186,7 +206,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "EOS",
@@ -195,7 +216,8 @@
         "mining_fee": "1",
         "regex": "^[1-5a-z\\.]{1,12}$",
         "regex_memo": "^[0-9A-Za-z\\\\-_,]{1,120}$",
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ETC",
@@ -204,7 +226,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ETH",
@@ -213,7 +236,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "FUN",
@@ -222,7 +246,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "GAS",
@@ -231,7 +256,8 @@
         "mining_fee": "1",
         "regex": "^(A)[A-Za-z0-9]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ICX",
@@ -240,7 +266,8 @@
         "mining_fee": "1",
         "regex": "^(hx)[A-Za-z0-9]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "KLV",
@@ -249,7 +276,8 @@
         "mining_fee": "1",
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "KNC",
@@ -258,7 +286,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "LINK",
@@ -267,7 +296,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "LSK",
@@ -276,7 +306,8 @@
         "mining_fee": "1",
         "regex": "^[0-9]{12,22}[L]$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "LTC",
@@ -285,7 +316,8 @@
         "mining_fee": "1",
         "regex": "^(L|M|3)[A-Za-z0-9]{33}$|^(ltc1)[0-9A-Za-z]{39}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "MANA",
@@ -294,7 +326,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "MTL",
@@ -303,7 +336,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "NANO",
@@ -312,7 +346,8 @@
         "mining_fee": "1",
         "regex": "^(xrb_|nano_)[13456789abcdefghijkmnopqrstuwxyz]{60}",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "NEO",
@@ -321,7 +356,8 @@
         "mining_fee": "1",
         "regex": "^(A)[A-Za-z0-9]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "QTUM",
@@ -330,7 +366,8 @@
         "mining_fee": "1",
         "regex": "^[Q|M][A-Za-z0-9]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "REP",
@@ -339,7 +376,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "RSR",
@@ -348,7 +386,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "RVN",
@@ -357,7 +396,8 @@
         "mining_fee": "1",
         "regex": "^[Rr]{1}[A-Za-z0-9]{33,34}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "SC",
@@ -366,7 +406,8 @@
         "mining_fee": "1",
         "regex": "^[A-Za-z0-9]{76}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "SKY",
@@ -375,7 +416,8 @@
         "mining_fee": "1",
         "regex": "^[0-9A-Za-z]{26,35}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "SUSHI",
@@ -384,7 +426,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "TRX",
@@ -393,7 +436,8 @@
         "mining_fee": "1",
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "UNI",
@@ -402,7 +446,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "USDT",
@@ -411,7 +456,8 @@
         "mining_fee": "1",
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "VET",
@@ -420,7 +466,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "VIA",
@@ -429,7 +476,8 @@
         "mining_fee": "1",
         "regex": "((V|E)[A-Za-z0-9]{33})|(via1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{39})",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "WAVES",
@@ -438,7 +486,8 @@
         "mining_fee": "1",
         "regex": "^(3P)[0-9A-Za-z]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "WBTC",
@@ -447,7 +496,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "WIN",
@@ -456,7 +506,8 @@
         "mining_fee": "1",
         "regex": "^T[1-9A-HJ-NP-Za-km-z]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "XLM",
@@ -465,7 +516,8 @@
         "mining_fee": "1",
         "regex": "^G[A-D]{1}[A-Z2-7]{54}$",
         "regex_memo": "^[0-9A-Za-z]{1,28}$",
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "XMR",
@@ -474,7 +526,8 @@
         "mining_fee": "1",
         "regex": "^[48][a-zA-Z|\\d]{94}([a-zA-Z|\\d]{11})?$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "XRP",
@@ -483,7 +536,8 @@
         "mining_fee": "1",
         "regex": "^r[1-9A-HJ-NP-Za-km-z]{25,34}$",
         "regex_memo": "^((?!0)[0-9]{1,19})$",
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "XTZ",
@@ -492,7 +546,8 @@
         "mining_fee": "1",
         "regex": "^(tz[1,2,3]|KT1)[a-zA-Z0-9]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "XVG",
@@ -501,7 +556,8 @@
         "mining_fee": "1",
         "regex": "^(D)[A-Za-z0-9]{33}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "YFI",
@@ -510,7 +566,8 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ZEC",
@@ -519,7 +576,8 @@
         "mining_fee": "1",
         "regex": "^(t)[A-Za-z0-9]{34}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ZIL",
@@ -528,7 +586,8 @@
         "mining_fee": "1",
         "regex": "zil1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{38}",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     },
     {
         "symbol": "ZRX",
@@ -537,6 +596,7 @@
         "mining_fee": "1",
         "regex": "^(0x)[0-9A-Fa-f]{40}$",
         "regex_memo": null,
-        "top": 0
+        "top": 0,
+        "algos": ["ethash", "etchash", "kawpow"]
     }
 ]

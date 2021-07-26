@@ -1,10 +1,12 @@
 [
     {
         "symbol": "ETH+ZIL",
-        "network": "ETH,ZIL"
+        "network": "ETH,ZIL",
+        "algos": ["ethash"]
     },
     {
         "symbol": "ETC+ZIL",
-        "network": "ETC,ZIL"
+        "network": "ETC,ZIL",
+        "algos": ["etchash"]
     }
 ]

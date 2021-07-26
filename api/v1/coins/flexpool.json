@@ -3,6 +3,6 @@
         "symbol": "ETH",
         "network": "ETH",
         "name": "Ethereum",
-        "mining_fee": "0.5"
+        "algos": ["ethash"]
     }
 ]

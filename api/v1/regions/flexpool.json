@@ -2,9 +2,7 @@
     "meta": {
         "multiRegion": true,
         "ports": [
-            "5555",
-            "4444",
-            "14444"
+            "5555"
         ]
     },
     "servers": [

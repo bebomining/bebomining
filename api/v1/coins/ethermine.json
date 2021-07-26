@@ -1,0 +1,20 @@
+[
+    {
+        "symbol": "ETH",
+        "network": "ETH",
+        "name": "Ethereum",
+        "algos": ["ethash"]
+    },
+    {
+        "symbol": "ETC",
+        "network": "ETC",
+        "name": "Ethereum",
+        "algos": ["etchash"]
+    },
+    {
+        "symbol": "RVN",
+        "network": "RVN",
+        "name": "Ravencoin",
+        "algos": ["kawpow"]
+    }
+]
