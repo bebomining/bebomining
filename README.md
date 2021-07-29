@@ -1,16 +1,24 @@
-### Hi there 👋
+<h3 align="center">An easy way to mine your preferred crypto coin.</h3><br/>
 
-<!--
-**bebomining/bebomining** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## :bulb: What is BeBoMining about?
 
-Here are some ideas to get you started:
+Welcome! 👋 BeBoMining is a FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner tools such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer) and [Xmrig](https://github.com/xmrig/xmrig).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## OS supported
+- Windows 10
+
+## Pools supported
+- [Ethermine](https://ethermine.org/)
+- [Ezil](https://ezil.me/)
+- [Flexpool](https://www.flexpool.io/)
+- [Unmineable](https://unmineable.com/)
+
+## Miner Tools supported
+- [T-Rex](https://github.com/trexminer/T-Rex)
+- [Teamredminer](https://github.com/todxx/teamredminer)
+- [lolMiner](https://github.com/Lolliedieb/lolMiner-releases)
+- [Xmrig](https://github.com/xmrig/xmrig)
+
+## License
+This software is free to use under the MIT license.
+See the [LICENSE file](/LICENSE.md) for license text and copyright information.
