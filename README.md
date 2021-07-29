@@ -20,5 +20,5 @@ Welcome! 👋 BeBoMining is a FREE software which simplify the mining of your be
 - [Xmrig](https://github.com/xmrig/xmrig)
 
 ## License
-This software is free to use under the MIT license.
+This software is free to use.
 See the [LICENSE file](/LICENSE.md) for license text and copyright information.
