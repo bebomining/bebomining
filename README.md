@@ -2,7 +2,14 @@
 
 ## :bulb: What is BeBoMining about?
 
-Welcome! 👋 BeBoMining is a FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner tools such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer) and [Xmrig](https://github.com/xmrig/xmrig).
+Welcome! 👋 BeBoMining is a FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner softwares such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer) and [Xmrig](https://github.com/xmrig/xmrig).
+
+It comes out of the box with:
+
+👉🏻 Zero manual configurations of the mining software.
+👉🏻 Zero manual configurations of the pool settings.
+
+It does not store any data such as wallet addresses or any other info on the cloud. Data is only stored on your local machine.
 
 ## OS supported
 - Windows 10
