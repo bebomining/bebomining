@@ -26,6 +26,9 @@ It does not store any data such as wallet addresses or any other info on the clo
 - [lolMiner](https://github.com/Lolliedieb/lolMiner-releases)
 - [Xmrig](https://github.com/xmrig/xmrig)
 
+## Antivirus alerts
+Some antivirus engines may detect the miners tools as viruses, you should add the folder `C:\Users\{YOUR_USERNAME}\AppData\Roaming\@bebomining` in the exception list of your antivirus.
+
 ## License
 This software is free to use.
 See the [LICENSE file](/LICENSE.md) for license text and copyright information.
