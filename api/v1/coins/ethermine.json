@@ -16,5 +16,11 @@
         "network": "RVN",
         "name": "Ravencoin",
         "algos": ["kawpow"]
+    },
+    {
+        "symbol": "ERG",
+        "network": "ERG",
+        "name": "Ergo",
+        "algos": ["autolykos2"]
     }
 ]

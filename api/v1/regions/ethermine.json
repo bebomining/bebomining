@@ -64,6 +64,14 @@
             "ports": [
                 "3443"
             ]
+        },
+        {
+            "location": "Global",
+            "server": "stratum-ergo.flypool.org",
+            "algo": "autolykos2",
+            "ports": [
+                "3333"
+            ]
         }
     ]
 }

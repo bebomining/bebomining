@@ -11,6 +11,10 @@
         {
             "value": "kawpow",
             "label": "KAWPOW"
+        },
+        {
+            "value": "autolykos2",
+            "label": "AUTOLYKOS2"
         }
     ]
 }
