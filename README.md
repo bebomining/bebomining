@@ -1,6 +1,6 @@
 <h3 align="center">An easy way to mine your preferred crypto coin.</h3><br/>
 
-https://raw.githubusercontent.com/bebomining/bebomining/bebomining-patch-1/getstarted.mp4
+https://bebomining.github.io/bebomining/video/getstarted.mp4
 
 ## :bulb: What is BeBoMining about?
 
