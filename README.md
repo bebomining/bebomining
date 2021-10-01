@@ -7,7 +7,10 @@ Welcome! 👋 BeBoMining is a FREE software which simplify the mining of your be
 It comes out of the box with:
 
 👉🏻 Zero manual configurations of the mining software.<br/>
-👉🏻 Zero manual configurations of the pool settings.
+👉🏻 Zero manual configurations of the pool settings.<br/>
+👉🏻 Remote control and monitoring of your rig with your mobile/desktop device. No need to install any app.<br/>
+👉🏻 No Registration required.<br/>
+👉🏻 Mining multiple coins on the same rig on different pool.<br/>
 
 It does not store any data such as wallet addresses or any other info on the cloud. Data is only stored on your local machine.
 
