@@ -1,5 +1,7 @@
 <h3 align="center">An easy way to mine your preferred crypto coin.</h3><br/>
 
+https://github.com/bebomining/bebomining/blob/bebomining-patch-1/getstarted.mp4?raw=true
+
 ## :bulb: What is BeBoMining about?
 
 Welcome! 👋 BeBoMining is a FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner softwares such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer) and [Xmrig](https://github.com/xmrig/xmrig).
