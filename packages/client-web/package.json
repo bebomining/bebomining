@@ -1,0 +1,36 @@
+{
+  "name": "@bebomining/client-web",
+  "version": "1.0.0",
+  "description": "BeboMining Web Client",
+  "homepage": "./",
+  "main": "src/index.jsx",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "mitt": "^2.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "socket.io-client": "4.2.0",
+    "usetheform": "3.4.1-alpha.4"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8"
+  },
+  "scripts": {
+    "lint": "eslint --ext .jsx --ext .js ./src --fix",
+    "start": "cross-env PORT=8085 BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

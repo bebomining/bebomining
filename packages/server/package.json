@@ -1,0 +1,102 @@
+{
+  "name": "@bebomining/server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BeboMining",
+  "main": "./build/index.js",
+  "homepage": "https://bebomining.com",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development NODE_TLS_REJECT_UNAUTHORIZED=0 PORT=8080 electron .",
+    "lint": "eslint --ext .js . _tests_ --fix",
+    "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest -u",
+    "test:watch": "npm run test -- --watch",
+    "test:cov": "npm test -- --coverage",
+    "coveralls": "npm run test:cov && cat ./coverage/lcov.info | coveralls",
+    "pack": "set DEBUG=electron-builder && electron-builder --dir",
+    "dist": "set NODE_ENV=production && electron-builder",
+    "dist:debug": "set NODE_ENV=production DEBUG=electron-builder && electron-builder"
+  },
+  "build": {
+    "appId": "com.bebomining.app",
+    "productName": "bebomining",
+    "artifactName": "bebomining_${version}.${ext}",
+    "linux": {
+      "target": "deb",
+      "executableName": "bebomining"
+    },
+    "win": {
+      "icon": "assets/icon.png",
+      "target": "portable"
+    },
+    "portable": {
+      "unpackDirName": "bebomining"
+    },
+    "deb": {},
+    "asar": true,
+    "forceCodeSigning": false,
+    "files": [
+      "assets/**/*",
+      "package.json",
+      "build/index.js"
+    ]
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.5",
+    "ansi-to-html": "^0.7.0",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "joi": "^17.4.0",
+    "memory-cache": "^0.2.0",
+    "node-fetch": "^2.6.1",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "electron": "15.1.1",
+    "electron-builder": "^22.11.7",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "author": {
+    "name": "BeBoMining",
+    "email": "bebomining@gmail.com"
+  },
+  "exports": {
+    "./os": "./components/os/index.js",
+    "./win32": "./components/os/win32/index.js",
+    "./routes-handler": "./components/routes-handler/index.js",
+    "./errors": "./components/errors/index.js",
+    "./electron": "./components/electron/index.js",
+    "./miners": "./components/miners/index.js",
+    "./cache": "./components/cache/index.js",
+    "./sqlite3": "./components/sqlite3/index.js",
+    "./workers": "./components/workers/index.js",
+    "./wallets": "./components/wallets/index.js",
+    "./coins": "./components/coins/index.js",
+    "./pools": "./components/pools/index.js",
+    "./fetch": "./components/fetch/index.js",
+    "./fetchWithTimeout": "./components/fetchWithTimeout/index.js",
+    "./settings": "./components/settings/index.js",
+    "./gpus": "./components/gpus/index.js",
+    "./routers/v1": "./routers/v1/index.js"
+  },
+  "engines": {
+    "node": ">= 14.15.0",
+    "npm": ">= 6.14.8"
+  },
+  "jest": {
+    "testRegex": "(/_tests_/.*\\.spec\\.js)$",
+    "collectCoverageFrom": [
+      "src/**/{!(index),}.js"
+    ],
+    "resetMocks": true,
+    "resetModules": true,
+    "transform": {}
+  },
+  "license": "MIT"
+}

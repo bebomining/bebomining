@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "react",
+    "flowtype",
+    "react-hooks"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+      "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
+      "prettier/prettier": ["error", {
+        "endOfLine":"auto",
+        "trailingComma": "none",
+        "arrowParens" :"avoid"
+      }],
+      "react-hooks/rules-of-hooks": "error",
+      "react/react-in-jsx-scope": 0,
+      "react/prop-types": "off"
+  },
+  "env": {
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "jest": true
+  },
+  "settings": {"import/core-modules": ["styled-jsx/css"] }
+}

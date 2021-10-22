@@ -1,0 +1,40 @@
+{
+    "name": "bebomining",
+    "description": "BeboMining",
+    "private": true,
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "build": "cross-env NODE_ENV=production yarn build:server && yarn workspace @bebomining/client build && yarn workspace @bebomining/server dist",
+        "lint": "yarn workspace @bebomining/client lint",
+        "client-web": "yarn workspace @bebomining/client-web start",
+        "client": "yarn workspace @bebomining/client start",
+        "build:client": "cross-env NODE_ENV=production yarn workspace @bebomining/client build",
+        "build:client-web": "cross-env NODE_ENV=production yarn workspace @bebomining/client-web build",
+        "build:server": "webpack --config webpack.config.js",
+        "server": "yarn workspace @bebomining/server start",
+        "socket": "yarn workspace @bebomining/socket start",
+        "start:client": "yarn workspace @bebomining/client start",
+        "start:server": "yarn workspace @bebomining/server start",
+        "start": "cross-env NODE_ENV=development yarn build:server && concurrently \"yarn server\" \"yarn socket\" \"yarn client\" \"yarn client-web\""
+    },
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "concurrently": "^6.1.0",
+        "cross-env": "^7.0.3",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-flowtype": "^5.7.2",
+        "eslint-plugin-prettier": "^3.4.0",
+        "prettier": "^2.3.0",
+        "terser-webpack-plugin": "^5.2.4"
+    },
+    "author": {
+        "name": "BeBoMining"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "unmineable",
+    "url": "https://unmineable.com",
+    "fee": "1",
+    "private": {
+        "stats": "https://www.unmineable.com/coins/${coinName}/address/${address}",
+        "miners": {
+            "teamredminer": {
+                "userAndPoolConfig": "${pool}, ${poolRegion}:${poolPort}, ${user}, ${coinName}:${address}.${workerName}"
+            },
+            "lolminer": {
+                "userAndPoolConfig": "${pool}, ${poolRegion}:${poolPort}, ${user}, ${coinName}:${address}.${workerName}"
+            },
+            "xmrig": {
+                "userAndPoolConfig": "${pool}, ${poolRegion}:${poolPort}, ${user}, ${coinName}:${address}.${workerName}"
+            },
+            "trex": {
+                "userAndPoolConfig": "${pool}, ${poolRegion}:${poolPort}, ${user}, ${coinName}:${address}.${workerName}"
+            }
+        }
+    }
+}

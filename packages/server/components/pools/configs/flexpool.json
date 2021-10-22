@@ -1,0 +1,19 @@
+{
+    "name": "flexpool",
+    "url": "https://www.flexpool.io/",
+    "fee": "0.5",
+    "private": {
+        "stats": "https://www.flexpool.io/miner/${coinName}/${address}?worker=${workerName}",
+        "miners": {
+            "teamredminer": {
+                "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}, ${user}, ${address}.${workerName}"
+            },
+            "lolminer": {
+                "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}, ${user}, ${address}.${workerName}"
+            },
+            "trex": {
+                "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}"
+            }
+        }
+    }
+}

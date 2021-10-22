@@ -4,7 +4,7 @@ https://user-images.githubusercontent.com/87696149/135662791-d94abbb1-3caf-4c3d-
 
 ## :bulb: What is BeBoMining about?
 
-Welcome! 👋 BeBoMining is a FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner softwares such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer) and [Xmrig](https://github.com/xmrig/xmrig).
+Welcome! 👋 BeBoMining is an open source FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner softwares such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer) and [Xmrig](https://github.com/xmrig/xmrig).
 
 It comes out of the box with:
 
@@ -33,6 +33,19 @@ It does not store any data such as wallet addresses or any other info on the clo
 
 ## Antivirus alerts
 Some antivirus engines may detect the miners tools as viruses, you should add the folder `C:\Users\{YOUR_USERNAME}\AppData\Roaming\@bebomining` in the exception list of your antivirus.
+
+## How to run it locally
+
+You need nodejs >= 14.18.1
+
+```sh
+npm install --global yarn
+```
+
+```sh
+yarn
+yarn start
+```
 
 ## License
 This software is free to use.

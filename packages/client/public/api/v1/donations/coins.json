@@ -1,0 +1,42 @@
+[
+    {
+        "name": "BTC",
+        "value": "bc1qsqp657a69jcv8jznsdx43krm5gym32vsqek0lm"
+    },
+    {
+        "name": "ETH",
+        "value": "0x0125696A3E3796302Bc50DB3ff57a3E5180eDA79"
+    },
+    {
+        "name": "ADA",
+        "value": "bnb1t889cv7l4vler3n6ffmkshypw30m5sau608kr9"
+    },
+    {
+        "name": "SOL",
+        "value": "6oAc21nQPjb2GUCPbn21mZz5vTgi43TcbDma8xutPZ2"
+    },
+    {
+        "name": "LTC",
+        "value": "ltc1qfrey97sxx0y752ys627uy53ua8ruraqdtjhgmg"
+    },
+    {
+        "name": "XRP",
+        "value": "r3jd5D1WcoLikbzPXSpRdrC4CGt4oRYQAH"
+    },
+    {
+        "name": "XLM",
+        "value": "GCHGF2PGRODWV4FRAPSLJNHXNJMLEMWTC6EWDWCZAN43JV5MBH6362YW"
+    },
+    {
+        "name": "RVN",
+        "value": "RNYzhKU3j3FBUUD3y7fD8SAEN2Qngahcxe"
+    },
+    {
+        "name": "ZIL",
+        "value": "zil1046spw7j9lh9cycmf7vtjk5ug6mwt865gygmgs"
+    },
+    {
+        "name": "ETC",
+        "value": "0x0E5A7A42b2236e7E3Aae01f07eD1106864aC6928"
+    }
+]

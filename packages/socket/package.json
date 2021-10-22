@@ -1,0 +1,25 @@
+{
+  "name": "@bebomining/socket",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BeboMining Socket",
+  "main": "./index.js",
+  "homepage": "https://bebomining.com",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development PORT=8000 node index.js",
+    "lint": "eslint --ext .js . --fix"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "4.2.0"
+  },
+  "author": {
+    "name": "BeBoMining",
+    "email": "bebomining@gmail.com"
+  },
+  "engines": {
+    "node": ">= 14.15.0",
+    "npm": ">= 6.14.8"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,27 @@
+.FormWorker{ 
+     flex: 1;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.FormWorker_Wrapper { 
+    flex:1;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+.FormWorker_Wrapper > form {
+    height: 100%;
+}
+
+.FormWorker_Nav {
+    padding: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}

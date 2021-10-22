@@ -1,0 +1,19 @@
+{
+    "name": "ezil",
+    "url": "https://ezil.me",
+    "fee": "0",
+    "private": {
+        "stats": "https://ezil.me/personal_stats?wallet=${address}",
+        "miners": {
+            "teamredminer": {
+                "userAndPoolConfig": "${pool}, stratum+tcp://${poolRegion}:${poolPort}, ${user}, ${address}.${workerName}"
+            },
+            "lolminer": {
+                "userAndPoolConfig": "${pool}, ${poolRegion}:${poolPort}, ${user}, ${address}.${workerName}, --ethstratum, ETHPROXY"
+            },
+            "trex": {
+                "userAndPoolConfig": "${pool}, stratum+tcp://${poolRegion}:${poolPort}"
+            }
+        }
+    }
+}

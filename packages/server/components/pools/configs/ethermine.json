@@ -1,0 +1,23 @@
+{
+    "name": "ethermine",
+    "url": "https://www.ethermine.org/",
+    "private": {
+        "stats": {
+            "ethash": "https://ethermine.org/miners/${address}/worker/${workerName}",
+            "etchash": "https://etc.ethermine.org/miners/${address}/worker/${workerName}",
+            "kawpow": "https://ravencoin.flypool.org/miners/${address}/worker/${workerName}",
+            "autolykos2": "https://ergo.flypool.org/miners/${address}/worker/${workerName}"
+        },
+        "miners": {
+            "teamredminer": {
+                "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}, ${user}, ${address}.${workerName}"
+            },
+            "lolminer": {
+                "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}, ${user}, ${address}.${workerName}"
+            },
+            "trex": {
+                "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}"
+            }
+        }
+    }
+}

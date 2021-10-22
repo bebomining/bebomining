@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "multiRegion": true,
+        "ports": [
+            "5555"
+        ]
+    },
+    "servers": [
+        {
+            "location": "US West",
+            "server": "eth-us-west.flexpool.io",
+            "algo": "ethash"
+        },
+        {
+            "location": "Germany",
+            "server": "eth-de.flexpool.io",
+            "algo": "ethash"
+        },
+        {
+            "location": "US East",
+            "server": "eth-us-east.flexpool.io",
+            "algo": "ethash"
+        },
+        {
+            "location": "Sweden",
+            "server": "eth-se.flexpool.io",
+            "algo": "ethash"
+        },
+        {
+            "location": "Singapore",
+            "server": "eth-sg.flexpool.io",
+            "algo": "ethash"
+        },
+        {
+            "location": "Australia",
+            "server": "eth-au.flexpool.io",
+            "algo": "ethash"
+        },
+        {
+            "location": "Brazil",
+            "server": "eth-br.flexpool.io",
+            "algo": "ethash"
+        },
+        {
+            "location": "South Korea",
+            "server": "eth-kr.flexpool.io",
+            "algo": "ethash"
+        }
+    ]
+}
