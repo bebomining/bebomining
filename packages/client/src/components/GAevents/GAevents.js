@@ -22,8 +22,16 @@ import {
   ON_DISCLAIMER_REJECTED
 } from "./../Disclaimer/events";
 
+import {
+  ON_MINER_INSTALLED_SUCCESS,
+  ON_MINER_INSTALLED_ERROR
+} from "./../Miners/events";
+
 export function GAevents({ bus }) {
   useEffect(() => {
+    bus.on(ON_MINER_INSTALLED_SUCCESS, onMinerInstalledSuccess);
+    bus.on(ON_MINER_INSTALLED_ERROR, onMinerInstalledError);
+
     bus.on(ON_DISCLAIMER_ACCEPTED, onDisclaimerAccepted);
     bus.on(ON_DISCLAIMER_REJECTED, onDisclaimerRejected);
 
@@ -44,6 +52,9 @@ export function GAevents({ bus }) {
     bus.on(ON_REMOVE_WORKER_END_ERROR, onRemoveWorkerEndError);
 
     return () => {
+      bus.off(ON_MINER_INSTALLED_SUCCESS, onMinerInstalledSuccess);
+      bus.off(ON_MINER_INSTALLED_ERROR, onMinerInstalledError);
+
       bus.off(ON_DISCLAIMER_ACCEPTED, onDisclaimerAccepted);
       bus.off(ON_DISCLAIMER_REJECTED, onDisclaimerRejected);
 
@@ -67,6 +78,29 @@ export function GAevents({ bus }) {
 
   return null;
 }
+
+/* ---- MINER_ACTIONS ---- */
+const MINER_ACTIONS = "miner_actions";
+
+function onMinerInstalledSuccess({ assetId, releaseId, minerName }) {
+  const eventProps = {
+    eventName: ON_MINER_INSTALLED_SUCCESS,
+    eventCategory: MINER_ACTIONS,
+    eventLabel: `${minerName}|${releaseId}|${assetId}`
+  };
+  trigger(eventProps);
+}
+
+function onMinerInstalledError({ assetId, releaseId, minerName }) {
+  const eventProps = {
+    eventName: ON_MINER_INSTALLED_ERROR,
+    eventCategory: MINER_ACTIONS,
+    eventLabel: `${minerName}|${releaseId}|${assetId}`
+  };
+  trigger(eventProps);
+}
+
+/* ---- MINER_ACTIONS ---- */
 
 /* ---- DISCLAIMER_ACTIONS ---- */
 const DISCLAIMER_ACTIONS = "disclaimer_actions";

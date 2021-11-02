@@ -5,6 +5,11 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import { useInstallAsset } from "./../../../../../hooks/useInstallAsset";
 import { useCheckInstalled } from "./../../../../../hooks/useCheckInstalled";
 import { useNotificationError } from "./../../../../../hooks/useNotificationError";
+import { useAppContext } from "../../../../../hooks/useAppContext";
+import {
+  ON_MINER_INSTALLED_SUCCESS,
+  ON_MINER_INSTALLED_ERROR
+} from "../../../events";
 
 const style = { minWidth: "111px", minHeight: "36px" };
 const noop = () => null;
@@ -12,6 +17,8 @@ const noop = () => null;
 export function BtnInstall({ assetId, releaseId, minerName }) {
   const { install, loading, data, error } = useInstallAsset();
   const { checking, data: installed } = useCheckInstalled({ minerName });
+  const { bus } = useAppContext();
+
   useNotificationError(error);
 
   const isInstalled =
@@ -32,7 +39,18 @@ export function BtnInstall({ assetId, releaseId, minerName }) {
 
   const disabled = checking || checking === null || loading === true;
   const installAction = !disabled
-    ? () => install({ assetId, releaseId, minerName })
+    ? async () => {
+        try {
+          await install({ assetId, releaseId, minerName });
+          bus.emit(ON_MINER_INSTALLED_SUCCESS, {
+            assetId,
+            releaseId,
+            minerName
+          });
+        } catch {
+          bus.emit(ON_MINER_INSTALLED_ERROR, { assetId, releaseId, minerName });
+        }
+      }
     : noop;
 
   return (

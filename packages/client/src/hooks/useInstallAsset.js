@@ -31,9 +31,12 @@ export function useInstallAsset() {
       }
       setLoading(false);
       setData(data);
+
+      return Promise.resolve();
     } catch (err) {
       setLoading(false);
       setError(err);
+      return Promise.reject();
     }
   };
 
