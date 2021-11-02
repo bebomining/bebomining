@@ -29,7 +29,7 @@ export const Teamredminer = ({ worker, meta, refreshId }) => {
   }
 
   console.log(data.results);
-  const { gpus, session } = data.results;
+  const { gpus, session } = data?.results || {};
   return (
     <div className={classes.root}>
       <HashInfo worker={worker} meta={meta} session={session} />

@@ -3,6 +3,11 @@ import Typography from "@material-ui/core/Typography";
 
 export const HashInfo = ({ session }) => {
   const classes = useStyles();
+
+  if (!session) {
+    return null;
+  }
+
   const { uptime, validShares, totalShares, performance, performanceUnit } =
     session;
 

@@ -2,7 +2,7 @@
     "name": "bebomining",
     "description": "BeboMining",
     "private": true,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "scripts": {
         "build": "cross-env NODE_ENV=production yarn build:server && yarn workspace @bebomining/client build && yarn workspace @bebomining/server dist",

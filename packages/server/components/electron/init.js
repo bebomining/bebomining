@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const { app, BrowserWindow, ipcMain, session } = require("electron");
 const { settings } = require("@bebomining/server/settings");
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
@@ -7,7 +7,13 @@ exports.init = state => ({
   init(server) {
     settings.init();
 
-    app.whenReady().then(() => {
+    app.whenReady().then(async () => {
+      if (!state.isDev) {
+        try {
+          await session.defaultSession.clearStorageData();
+        } catch (err) {}
+      }
+
       this.createWindow();
       state.win.tray = this.createTray();
 
@@ -15,7 +21,8 @@ exports.init = state => ({
         state.win.reload();
       });
 
-      ipcMain.on("relaunch", function () {
+      ipcMain.on("relaunch", async () => {
+        await this.killProcesses();
         const opt = {};
         opt.args = process.argv.slice(1).concat(["--relaunch"]);
         opt.execPath = process.execPath;
@@ -30,7 +37,8 @@ exports.init = state => ({
         app.exit();
       });
 
-      ipcMain.on("onCloseApp", function () {
+      ipcMain.on("onCloseApp", async () => {
+        await this.killProcesses();
         app.exit();
         server.close();
       });

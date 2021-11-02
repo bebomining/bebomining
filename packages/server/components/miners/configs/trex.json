@@ -1,0 +1,59 @@
+{
+    "project": "https://api.github.com/repos/trexminer/T-Rex/releases",
+    "releases": "https://api.github.com/repos/trexminer/T-Rex/releases?page=1&per_page=5",
+    "minerMode": "GPU",
+    "supports": "GPU: NVIDIA",
+    "supportGPUsRegex": "NVIDIA|GeForce",
+    "name": "trex",
+    "algoSupported": [
+        {
+            "value": "octopus",
+            "algo": "Octopus (CFX)",
+            "fee": "2"
+        },
+        {
+            "value": "autolykos2",
+            "algo": "Autolykos V2 (Ergo)",
+            "fee": "2"
+        },
+        {
+            "value": "etchash",
+            "algo": "ETCHASH",
+            "fee": "1"
+        },
+        {
+            "value": "ethash",
+            "algo": "ETHASH",
+            "fee": "1"
+        },
+        {
+            "value": "kawpow",
+            "algo": "kawpow",
+            "fee": "1"
+        }   
+    ],
+    "private": {
+        "mapCmdKey": {
+            "pool": "-o"
+        },
+        "start": "-a, ${algo}, ${usersAndPools}, -u, ${address}, -w, ${workerName}, --api-bind-http, 127.0.0.1:${portStat}, --api-read-only, --devices, ${gpus}, --pci-indexing, -p, x",
+        "reservedParameters": [
+            "--api-read-only",
+            "--api-bind-http",
+            "--ab-indexing",
+            "--pci-indexing"
+        ],
+        "os": {
+            "win32": {
+                "exe": "t-rex.exe",
+                "releases": [
+                    {
+                        "apiURL": "https://api.github.com/repos/trexminer/T-Rex/releases/51930630",
+                        "releaseId": 51930630,
+                        "assetId": 47750124
+                    }
+                ]
+            }
+        }
+    }
+}

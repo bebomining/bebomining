@@ -1,0 +1,47 @@
+{
+    "project": "https://github.com/Lolliedieb/lolMiner-releases",
+    "releases": "https://api.github.com/repos/Lolliedieb/lolMiner-releases/releases?page=1&per_page=5",
+    "minerMode": "GPU",
+    "supports": "GPU: NVIDIA, AMD",
+    "supportGPUsRegex": "AMD|Radeon|NVIDIA|GeForce",
+    "name": "lolminer",
+    "algoSupported": [
+        {
+            "value": "AUTOLYKOS2",
+            "algo": "Autolykos V2 (Ergo)",
+            "fee": "1.5"
+        },
+        {
+            "value": "ETCHASH",
+            "algo": "ETCHASH",
+            "fee": "0.7"
+        },
+        {
+            "value": "ETHASH",
+            "algo": "ETHASH",
+            "fee": "0.7"
+        }
+    ],
+    "private": {
+        "mapCmdKey": {
+            "pool": "--pool",
+            "user": "--user"
+        },
+        "start": "--algo, ${algo}, ${usersAndPools}, --apihost, 127.0.0.1, --apiport, ${portStat}, --devices, ${gpus}",
+        "reservedParameters": [
+            "--apiport"
+        ],
+        "os": {
+            "win32": {
+                "exe": "lolMiner.exe",
+                "releases": [
+                    {
+                        "apiURL": "https://api.github.com/repos/Lolliedieb/lolMiner-releases/releases/51488865",
+                        "releaseId": 51488865,
+                        "assetId": 47253534
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@bebomining/client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bebomining",
   "homepage": "./",
   "main": "src/index.jsx",

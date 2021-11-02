@@ -27,7 +27,7 @@ export const Xmrig = ({ worker, meta, refreshId }) => {
   }
 
   console.log(data.results);
-  const { cpus, session } = data.results;
+  const { cpus, session } = data?.results || {};
   return (
     <div className={classes.root}>
       <HashInfo worker={worker} meta={meta} session={session} />

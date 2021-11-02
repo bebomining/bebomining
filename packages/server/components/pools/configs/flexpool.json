@@ -13,6 +13,9 @@
             },
             "trex": {
                 "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}"
+            },
+            "nbminer": {
+                "userAndPoolConfig": "${pool}, stratum+ssl://${poolRegion}:${poolPort}, ${user}, ${address}.${workerName}"
             }
         }
     }

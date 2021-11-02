@@ -1,0 +1,52 @@
+{
+    "project": "https://github.com/NebuTech/NBMiner",
+    "releases": "https://api.github.com/repos/NebuTech/NBMiner/releases?page=1&per_page=5",
+    "minerMode": "GPU",
+    "supports": "GPU: NVIDIA, AMD",
+    "supportGPUsRegex": "AMD|Radeon|NVIDIA|GeForce",
+    "name": "nbminer",
+    "algoSupported": [
+        {
+            "value": "octopus",
+            "algo": "Octopus (CFX)",
+            "fee": "2"
+        },
+        {
+            "value": "autolykos2",
+            "algo": "Autolykos V2 (Ergo)",
+            "fee": "2"
+        },
+        {
+            "value": "ethash",
+            "algo": "ETHASH",
+            "fee": "1"
+        },
+        {
+            "value": "kawpow",
+            "algo": "kawpow",
+            "fee": "1"
+        }   
+    ],
+    "private": {
+        "mapCmdKey": {
+            "pool": "-o",
+            "user": "-u"
+        },
+        "start": "--algo, ${algo}, ${usersAndPools}, --api, 127.0.0.1:${portStat}, --devices, ${gpus}",
+        "reservedParameters": [
+            "--api"
+        ],
+        "os": {
+            "win32": {
+                "exe": "nbminer.exe",
+                "releases": [
+                    {
+                        "apiURL": "https://api.github.com/repos/NebuTech/NBMiner/releases/52364305",
+                        "releaseId": 52364305,
+                        "assetId": 48223929
+                    }
+                ]
+            }
+        }
+    }
+}

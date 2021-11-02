@@ -1,0 +1,38 @@
+{
+    "project": "https://github.com/xmrig/xmrig",
+    "releases": "https://api.github.com/repos/xmrig/xmrig/releases?page=1&per_page=5",
+    "minerMode": "CPU",
+    "supports": "CPUs",
+    "name": "xmrig",
+    "algoSupported": [
+        {
+            "value": "rx",
+            "algo": "RX",
+            "fee": "1"
+        }
+    ],
+    "private": {
+        "mapCmdKey": {
+            "pool": "-o",
+            "user": "-u"
+        },
+        "start": "${usersAndPools}, -k, -a, ${algo}, --http-host, 127.0.0.1, --http-port, ${portStat}, --http-enabled, -p, x",
+        "reservedParameters": [
+            "--http-port",
+            "--http-host",
+            "--background"
+        ],
+        "os": {
+            "win32": {
+                "exe": "xmrig.exe",
+                "releases": [
+                    {
+                        "apiURL": "https://api.github.com/repos/xmrig/xmrig/releases/50833069",
+                        "releaseId": 50833069,
+                        "assetId": 46293008
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -44,7 +44,7 @@ exports.getStats = async function getStats(req, res, next) {
       };
       next();
     } catch (err) {
-      workers.removeFromRunning(worker);
+      workers.removeFromRunning(workerWithAllDetails);
       throw err;
     }
     // add worker miner stat

@@ -1,7 +1,7 @@
 {
   "name": "@bebomining/server",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BeboMining",
   "main": "./build/index.js",
   "homepage": "https://bebomining.com",

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Collection, useForm, PersistStateOnUnmount } from "usetheform";
 import Button from "@material-ui/core/Button";

@@ -5,6 +5,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+import { formatNumber } from "./../../../utils";
 
 export const Gpus = ({ gpus }) => {
   const classes = useStyles();
@@ -38,7 +39,7 @@ export const Gpus = ({ gpus }) => {
                     {name}
                   </TableCell>
                   <TableCell component="th" scope="row">
-                    {performance}
+                    {formatNumber(performance, 2)}
                   </TableCell>
                   <TableCell component="th">{power} W</TableCell>
                   <TableCell component="th">{temp} °C</TableCell>

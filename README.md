@@ -4,7 +4,7 @@ https://user-images.githubusercontent.com/87696149/135662791-d94abbb1-3caf-4c3d-
 
 ## :bulb: What is BeBoMining about?
 
-Welcome! 👋 BeBoMining is an open source FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner softwares such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer) and [Xmrig](https://github.com/xmrig/xmrig).
+Welcome! 👋 BeBoMining is an open source FREE software which simplify the mining of your beloved crypto currencies. It supports multiple pools as well as multiple miner softwares such as [T-Rex](https://github.com/trexminer/T-Rex), [lolMiner](https://github.com/Lolliedieb/lolMiner-releases), [Teamredminer](https://github.com/todxx/teamredminer), [NBMiner](https://github.com/NebuTech/NBMiner) and [Xmrig](https://github.com/xmrig/xmrig).
 
 It comes out of the box with:
 
@@ -26,9 +26,10 @@ It does not store any data such as wallet addresses or any other info on the clo
 - [Unmineable](https://unmineable.com/)
 
 ## Miner Tools supported
+- [lolMiner](https://github.com/Lolliedieb/lolMiner-releases)
+- [NBMiner](https://github.com/NebuTech/NBMiner)
 - [T-Rex](https://github.com/trexminer/T-Rex)
 - [Teamredminer](https://github.com/todxx/teamredminer)
-- [lolMiner](https://github.com/Lolliedieb/lolMiner-releases)
 - [Xmrig](https://github.com/xmrig/xmrig)
 
 ## Antivirus alerts
@@ -47,6 +48,14 @@ yarn
 yarn start
 ```
 
+## Tech Stack
+
+- [Electron](https://www.electronjs.org/)
+- [ReactJS](https://reactjs.org/)
+- [Socket.IO](https://socket.io/)
+- [webRTC](https://webrtc.org/)
+- [Sqlite](https://www.sqlite.org/index.html)
+ 
 ## License
 This software is free to use.
 See the [LICENSE file](/LICENSE.md) for license text and copyright information.

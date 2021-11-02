@@ -4,6 +4,11 @@ import { formatNumber } from "./../../../../utils";
 
 export const HashInfo = ({ session }) => {
   const classes = useStyles();
+
+  if (!session) {
+    return null;
+  }
+
   const { uptime, activeGPUs, totalPower, performance, performanceUnit } =
     session;
 

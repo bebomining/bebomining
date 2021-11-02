@@ -18,7 +18,8 @@ exports.createTray = state => ({
       },
       {
         label: "Restart",
-        click: function () {
+        click: async () => {
+          await this.killProcesses();
           const opt = {};
           opt.args = process.argv.slice(1).concat(["--relaunch"]);
           opt.execPath = process.execPath;
@@ -35,7 +36,8 @@ exports.createTray = state => ({
       },
       {
         label: "Exit",
-        click: function () {
+        click: async () => {
+          await this.killProcesses();
           app.isQuiting = true;
           app.quit();
         }

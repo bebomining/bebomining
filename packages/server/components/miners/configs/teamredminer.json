@@ -1,0 +1,52 @@
+{
+    "project": "https://github.com/todxx/teamredminer/releases",
+    "releases": "https://github.com/todxx/teamredminer/releases?page=1&per_page=5",
+    "minerMode": "GPU",
+    "supports": "GPU: AMD",
+    "supportGPUsRegex": "AMD|Radeon",
+    "name": "teamredminer",
+    "algoSupported": [
+        {
+            "value": "verthash",
+            "algo": "Verthash",
+            "fee": "2"
+        },
+        {
+            "value": "autolykos2",
+            "algo": "Autolykos V2 (Ergo)",
+            "fee": "2"
+        },
+        {
+            "value": "ethash",
+            "algo": "ETHASH",
+            "fee": "1"
+        },
+        {
+            "value": "kawpow",
+            "algo": "kawpow",
+            "fee": "1"
+        }   
+    ],
+    "private": {
+        "mapCmdKey": {
+            "pool": "-o",
+            "user": "-u"
+        },
+        "start": "-a, ${algo}, ${usersAndPools}, --api_listen=127.0.0.1:${portStat}, --devices, ${gpus}",
+        "reservedParameters": [
+            "--api_listen"
+        ],
+        "os": {
+            "win32": {
+                "exe": "teamredminer.exe",
+                "releases": [
+                    {
+                        "apiURL": "https://api.github.com/repos/todxx/teamredminer/releases/51495216",
+                        "releaseId": 51495216,
+                        "assetId": 47195941
+                    }
+                ]
+            }
+        }
+    }
+}
