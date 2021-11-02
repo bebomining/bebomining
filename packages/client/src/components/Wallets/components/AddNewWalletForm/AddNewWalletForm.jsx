@@ -14,34 +14,14 @@ import { useAppContext } from "./../../../../hooks/useAppContext";
 import { useNotificationError } from "./../../../../hooks/useNotificationError";
 import { fetch } from "./../../../../utils";
 
-const useStyles = makeStyles({
-  FormWrapper: {
-    width: "100%",
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    position: "relative"
-  },
-  Form: {
-    display: "flex",
-    flexDirection: "column",
-    marginTop: "32px",
-    height: "33%",
-    justifyContent: "space-around"
-  },
-  backButton: {
-    position: "absolute",
-    zIndex: 2,
-    top: "16px",
-    left: "16px"
-  }
-});
+import {
+  ON_CREATE_WALLET_SUCCESS,
+  ON_CREATE_WALLET_API_ERROR
+} from "./../../events";
 
 export function AddNewWalletForm() {
   const classes = useStyles();
-  const { apiServer } = useAppContext();
+  const { apiServer, bus } = useAppContext();
   const history = useHistory();
 
   const [error, setError] = useState(null);
@@ -59,6 +39,7 @@ export function AddNewWalletForm() {
     });
     const result = await res.json();
     if (result.statusCode === 201) {
+      bus.emit(ON_CREATE_WALLET_SUCCESS, state);
       history.push(`/wallets`);
     }
     if (result.status === "error") {
@@ -67,6 +48,7 @@ export function AddNewWalletForm() {
     }
 
     if (result.statusCode !== 201) {
+      bus.emit(ON_CREATE_WALLET_API_ERROR, state);
       return Promise.reject();
     }
   };
@@ -105,6 +87,31 @@ export function AddNewWalletForm() {
     </div>
   );
 }
+
+const useStyles = makeStyles({
+  FormWrapper: {
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative"
+  },
+  Form: {
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "32px",
+    height: "33%",
+    justifyContent: "space-around"
+  },
+  backButton: {
+    position: "absolute",
+    zIndex: 2,
+    top: "16px",
+    left: "16px"
+  }
+});
 
 const isValidName = value =>
   value && /^[a-zA-Z0-9]{2,16}$/.test(value) ? undefined : "Name not valid";

@@ -11,6 +11,7 @@ import { AppWrapper } from "./AppWrapper";
 import { NotificationsPortal } from "./components/NotificationsPortal/NotificationsPortal";
 import { ActionProgress } from "./components/ActionProgress/ActionProgress";
 import { Disclaimer } from "./components/Disclaimer/Disclaimer";
+import { GAevents } from "./components/GAevents/GAevents";
 
 import "./styles.css";
 
@@ -110,6 +111,7 @@ function App() {
         </NotificationsPortal>
         <ActionProgress bus={bus} />
       </NotificationContext.Provider>
+      <GAevents bus={bus} />
     </div>
   );
 }

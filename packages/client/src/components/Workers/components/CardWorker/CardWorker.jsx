@@ -26,23 +26,29 @@ import {
   ON_PLAY_WORKER_END_ERROR,
   ON_STOP_WORKER_START,
   ON_STOP_WORKER_END_SUCCESS,
-  ON_STOP_WORKER_END_ERROR
+  ON_STOP_WORKER_END_ERROR,
+  ON_REMOVE_WORKER_START,
+  ON_REMOVE_WORKER_END_SUCCESS,
+  ON_REMOVE_WORKER_END_ERROR
 } from "./../../events";
 
 const noop = () => null;
 export function CardWorker({
-  workerName,
-  coinName,
-  minerMode,
-  minerName,
-  poolName,
-  walletName,
-  algo,
-  id: workerId,
   onAction = noop,
-  isRunning = false,
-  onRemoveWorker
+  onRemoveWorker,
+  ...workerProps
 }) {
+  const {
+    workerName,
+    coinName,
+    minerMode,
+    minerName,
+    poolName,
+    walletName,
+    algo,
+    id: workerId,
+    isRunning = false
+  } = workerProps;
   const classes = useStyles();
   const { apiServer, bus, winStatus } = useAppContext();
   const history = useHistory();
@@ -63,7 +69,7 @@ export function CardWorker({
     setDisableAllAction(true);
     onAction(true);
     try {
-      bus.emit(ON_PLAY_WORKER_START);
+      bus.emit(ON_PLAY_WORKER_START, workerProps);
       const url = `${apiServer}/api/v1/workers/${workerId}/_start`;
       const promise = waitPromiseTimeout(fetch(url, { method: "POST" }));
       const label = `Starting ${workerName}...`;
@@ -71,10 +77,11 @@ export function CardWorker({
       const result = await promise;
       setStatus(true);
       getCardStats();
-      bus.emit(ON_PLAY_WORKER_END_SUCCESS);
+      bus.emit(ON_PLAY_WORKER_END_SUCCESS, workerProps);
       console.log("onPlay ", result);
+    } catch {
+      bus.emit(ON_PLAY_WORKER_END_ERROR, workerProps);
     } finally {
-      bus.emit(ON_PLAY_WORKER_END_ERROR);
       setDisableAllAction(false);
       onAction(false);
     }
@@ -85,7 +92,7 @@ export function CardWorker({
     setDisableAllAction(true);
     onAction(true);
     try {
-      bus.emit(ON_STOP_WORKER_START);
+      bus.emit(ON_STOP_WORKER_START, workerProps);
       const url = `${apiServer}/api/v1/workers/${workerId}/_stop`;
       const promise = waitPromiseTimeout(fetch(url, { method: "POST" }));
       const label = `Stopping ${workerName}...`;
@@ -94,10 +101,11 @@ export function CardWorker({
       setStatus(false);
       setStats(null);
       clearTimeout(pingFn.current);
-      bus.emit(ON_STOP_WORKER_END_SUCCESS);
+      bus.emit(ON_STOP_WORKER_END_SUCCESS, workerProps);
       console.log("onStop ", result);
+    } catch {
+      bus.emit(ON_STOP_WORKER_END_ERROR, workerProps);
     } finally {
-      bus.emit(ON_STOP_WORKER_END_ERROR);
       setDisableAllAction(false);
       onAction(false);
     }
@@ -109,14 +117,17 @@ export function CardWorker({
     setDisableAllAction(true);
     toggleRemoveModal();
     try {
+      bus.emit(ON_REMOVE_WORKER_START, workerProps);
       const url = `${apiServer}/api/v1/workers/${workerId}`;
       const promise = waitPromiseTimeout(fetch(url, { method: "DELETE" }));
       const label = `Deleting Worker: '${workerName}'...`;
       bus.emit(WITH_ACTION_PROGRESS, { promise, label });
       const result = await promise;
       onRemoveWorker({ workerId });
+      bus.emit(ON_REMOVE_WORKER_END_SUCCESS, workerProps);
       console.log("onDelete Worker", result);
     } catch (err) {
+      bus.emit(ON_REMOVE_WORKER_END_ERROR, workerProps);
       console.error(err);
     } finally {
       setDisableAllAction(false);
