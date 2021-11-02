@@ -17,8 +17,16 @@ import {
   ON_CREATE_WALLET_API_ERROR
 } from "./../Wallets/events";
 
+import {
+  ON_DISCLAIMER_ACCEPTED,
+  ON_DISCLAIMER_REJECTED
+} from "./../Disclaimer/events";
+
 export function GAevents({ bus }) {
   useEffect(() => {
+    bus.on(ON_DISCLAIMER_ACCEPTED, onDisclaimerAccepted);
+    bus.on(ON_DISCLAIMER_REJECTED, onDisclaimerRejected);
+
     bus.on(ON_CREATE_WALLET_SUCCESS, onCreateWalletSuccess);
     bus.on(ON_CREATE_WALLET_API_ERROR, onCreateWalletApiError);
 
@@ -36,6 +44,9 @@ export function GAevents({ bus }) {
     bus.on(ON_REMOVE_WORKER_END_ERROR, onRemoveWorkerEndError);
 
     return () => {
+      bus.off(ON_DISCLAIMER_ACCEPTED, onDisclaimerAccepted);
+      bus.off(ON_DISCLAIMER_REJECTED, onDisclaimerRejected);
+
       bus.off(ON_CREATE_WALLET_SUCCESS, onCreateWalletSuccess);
       bus.off(ON_CREATE_WALLET_API_ERROR, onCreateWalletApiError);
 
@@ -56,6 +67,29 @@ export function GAevents({ bus }) {
 
   return null;
 }
+
+/* ---- DISCLAIMER_ACTIONS ---- */
+const DISCLAIMER_ACTIONS = "disclaimer_actions";
+
+function onDisclaimerAccepted() {
+  const eventProps = {
+    eventName: ON_DISCLAIMER_ACCEPTED,
+    eventCategory: DISCLAIMER_ACTIONS,
+    eventLabel: `accepted`
+  };
+  trigger(eventProps);
+}
+
+function onDisclaimerRejected() {
+  const eventProps = {
+    eventName: ON_DISCLAIMER_REJECTED,
+    eventCategory: DISCLAIMER_ACTIONS,
+    eventLabel: `rejected`
+  };
+  trigger(eventProps);
+}
+
+/* ---- DISCLAIMER_ACTIONS ---- */
 
 /* ---- WALLET_ACTIONS ---- */
 const WALLET_ACTIONS = "wallet_actions";

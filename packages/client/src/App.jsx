@@ -11,6 +11,11 @@ import { AppWrapper } from "./AppWrapper";
 import { NotificationsPortal } from "./components/NotificationsPortal/NotificationsPortal";
 import { ActionProgress } from "./components/ActionProgress/ActionProgress";
 import { Disclaimer } from "./components/Disclaimer/Disclaimer";
+import {
+  ON_DISCLAIMER_ACCEPTED,
+  ON_DISCLAIMER_REJECTED
+} from "./components/Disclaimer/events";
+
 import { GAevents } from "./components/GAevents/GAevents";
 
 import "./styles.css";
@@ -19,6 +24,8 @@ const bus = mitt();
 const apiServer = process.env.REACT_APP_API_SERVER;
 
 function App() {
+  const [disclaimerRejection, setDisclaimerRejection] = useState(() => false);
+
   const classes = useStyles();
   const socket = useSocketAndWebRTC({ bus });
   const [value, setValueApp] = useState(() => ({
@@ -63,6 +70,7 @@ function App() {
   }, [value.isAppLoaded]);
 
   const onAcceptDisclaimer = () => {
+    bus.emit(ON_DISCLAIMER_ACCEPTED);
     window.electron.send("onDisclaimerAccepted");
     setValueApp(prev => ({
       ...prev,
@@ -71,8 +79,29 @@ function App() {
   };
 
   const onRejectDisclaimer = () => {
-    window.electron.send("onDisclaimerRejected");
+    if (!disclaimerRejection) {
+      bus.emit(ON_DISCLAIMER_REJECTED);
+      setDisclaimerRejection(true);
+      setTimeout(() => window.electron.send("onDisclaimerRejected"), 5000);
+    }
   };
+
+  if (disclaimerRejection) {
+    return (
+      <div className={classes.ProgressBar}>
+        <Typography
+          variant="h5"
+          component="h5"
+          color="textSecondary"
+          className={classes.ProgressBarTitle}
+          gutterBottom
+        >
+          Application is shutting down! You rejected terms and conditions!
+        </Typography>
+        <LinearProgress color="primary" />
+      </div>
+    );
+  }
 
   if (!value.isAppLoaded) {
     return (
