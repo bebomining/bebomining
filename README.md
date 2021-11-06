@@ -16,6 +16,8 @@ It comes out of the box with:
 
 It does not store any data such as wallet addresses or any other info on the cloud. Data is only stored on your local machine.
 
+Download is available in the [github releases section](https://github.com/bebomining/bebomining/releases).
+
 ## OS supported
 - Windows 10
 
