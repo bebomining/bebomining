@@ -84,6 +84,10 @@ export function useSocketAndWebRTC(opts = {}) {
   const handleOffers = async ({ asker }) => {
     console.log({ type: "handleOffers", asker });
 
+    if (myConnection.current) {
+      myConnection.current?.close?.();
+    }
+
     myConnection.current = new RTCPeerConnection(config, {});
 
     const dataChannelOptions = { reliable: true };

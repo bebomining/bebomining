@@ -76,8 +76,9 @@ export function CardWorker({
       getCardStats();
       bus.emit(ON_PLAY_WORKER_END_SUCCESS);
       console.log("onPlay ", result);
-    } finally {
+    } catch {
       bus.emit(ON_PLAY_WORKER_END_ERROR);
+    } finally {
       setDisableAllAction(false);
       onAction(false);
     }
@@ -98,8 +99,9 @@ export function CardWorker({
       setStats(null);
       bus.emit(ON_STOP_WORKER_END_SUCCESS);
       clearTimeout(pingFn.current);
-    } finally {
+    } catch {
       bus.emit(ON_STOP_WORKER_END_ERROR);
+    } finally {
       setDisableAllAction(false);
       onAction(false);
     }
